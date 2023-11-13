@@ -15,4 +15,4 @@ product                                                 /product                
 /boot       ext4        /dev/block/bootdevice/by-name/boot_a        flags=display="Boot A";flashimg=1;backup=1
 /boot       ext4        /dev/block/bootdevice/by-name/boot_b        flags=display="Boot B";flashimg=1;backup=1   
 /metadata   ext4        /dev/block/bootdevice/by-name/metadata      flags=display="Metadata";backup=1
-/data       ext4        /dev/block/bootdevice/by-name/userdata      flags=display="Data";backup=1
+/data       f2fs        /dev/block/bootdevice/by-name/userdata      flags=display="Data";backup=1
