@@ -1,3 +1,10 @@
+system                                                  /system                  ext4    ro                                                   wait,slotselect,avb=vbmeta_system,avb_keys=/avb/q-gsi.avbpubkey:/avb/r-gsi.avbpubkey:/avb/s-gsi.avbpubkey,logical,first_stage_mount
+system_ext                                              /system_ext              ext4    ro                                                   wait,slotselect,avb=vbmeta_system,logical,nofail,first_stage_mount
+vendor                                                  /vendor                  ext4    ro                                                   wait,slotselect,avb,logical,first_stage_mount
+product                                                 /product                 ext4    ro                                                   wait,slotselect,avb,logical,nofail,first_stage_mount
+
+
+
 /system_a_image    emmc      /dev/block/mapper/by-name/system_a    flags=display="System A";flashimg;backup=1
 /system_b_image    emmc      /dev/block/mapper/by-name/system_b    flags=display="System B";flashimg;backup=1
 /vendor_a_image    emmc      /dev/block/mapper/by-name/vendor_a    flags=display="Vendor A";flashimg;backup=1
