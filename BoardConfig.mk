@@ -10,6 +10,13 @@ DEVICE_PATH := device/motorola/penang
 # For building with minimal manifest
 ALLOW_MISSING_DEPENDENCIES := true
 
+# Enable CPUSets
+ENABLE_CPUSETS := true
+ENABLE_SCHEDBOOST := true
+
+# GPT Utils
+BOARD_PROVIDES_GPTUTILS := true
+
 # A/B
 AB_OTA_UPDATER := true
 AB_OTA_PARTITIONS += \
