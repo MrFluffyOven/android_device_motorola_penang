@@ -10,6 +10,11 @@ DEVICE_PATH := device/motorola/penang
 # For building with minimal manifest
 ALLOW_MISSING_DEPENDENCIES := true
 
+# Architecture
+TARGET_IS_64_BIT := true
+TARGET_SUPPORTS_32_BIT_APPS := true
+TARGET_SUPPORTS_64_BIT_APPS := true
+
 # Enable CPUSets
 ENABLE_CPUSETS := true
 ENABLE_SCHEDBOOST := true
