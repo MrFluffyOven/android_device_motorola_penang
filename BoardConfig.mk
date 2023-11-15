@@ -17,6 +17,23 @@ ENABLE_SCHEDBOOST := true
 # GPT Utils
 BOARD_PROVIDES_GPTUTILS := true
 
+# Kernel
+BOARD_KERNEL_CMDLINE := console=ttyMSM0,115200n8 \
+			earlycon=msm_geni_serial,0x4a90000 \
+			androidboot.hardware=qcom \
+			androidboot.console=ttyMSM0 \
+			androidboot.memcg=1 \
+			lpm_levels.sleep_disabled=1 \
+			video=vfb:640x400,bpp=32,memsize=3072000 \
+			msm_rtb.filter=0x237 \
+			service_locator.enable=1 \
+			loop.max_part=7 \
+			swiotlb=2048 \
+			androidboot.hab.csv=16 \
+			androidboot.hab.product=penang \
+			androidboot.hab.cid=50 \
+			firmware_class.path=/vendor/firmware_mnt/image
+
 # A/B
 AB_OTA_UPDATER := true
 AB_OTA_PARTITIONS += \
@@ -66,6 +83,14 @@ ifeq ($(TARGET_PREBUILT_KERNEL),)
 endif
 
 BOARD_BOOTIMG_HEADER_VERSION := 3
+BOARD_KERNEL_PAGESIZE := 4096
+BOARD_KERNEL_BASE          := 0x00000000
+BOARD_KERNEL_OFFSET        := 0x00008000
+BOARD_RAMDISK_OFFSET       := 0x01000000
+BOARD_KERNEL_SECOND_OFFSET := 0x00000000
+BOARD_KERNEL_TAGS_OFFSET   := 0x00000100
+BOARD_DTB_OFFSET           := 0x01f00000
+
 BOARD_KERNEL_IMAGE_NAME := Image
 BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOTIMG_HEADER_VERSION)
 BOARD_MKBOOTIMG_ARGS += --pagesize $(BOARD_KERNEL_PAGESIZE)
