@@ -8,9 +8,6 @@
 # Inherit some common twrp stuff.
 $(call inherit-product, vendor/twrp/config/common.mk)
 
-# Inherit from penang device
-$(call inherit-product, device/motorola/penang/device.mk)
-
 # Release name
 PRODUCT_RELEASE_NAME := penang
 
