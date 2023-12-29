@@ -1,10 +1,11 @@
-# Android device tree for motorola Holi for arm64 (penang)
+### Moto G53 5G TWRP
 
-```
-#
-# Copyright (C) 2023 The Android Open Source Project
-# Copyright (C) 2023 SebaUbuntu's TWRP device tree generator
-#
-# SPDX-License-Identifier: Apache-2.0
-#
-```
+## Prepare
+    mkdir tw
+    cd tw
+## Initialise TWRP Repo
+    ...
+## Sync Repo
+    repo sync
+## Build
+    ...
