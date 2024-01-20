@@ -1,0 +1,14 @@
+/lib/modules/tcpc_rt1711h.ko: /lib/modules/tcpc_class.ko /lib/modules/adapter_class.ko
+/lib/modules/mmi_info.ko: /lib/modules/mmi_annotate.ko
+/lib/modules/cw2217b_fg_mmi.ko:
+/lib/modules/mmi_discrete_charger.ko: /lib/modules/mmi_charger.ko /lib/modules/mmi_info.ko /lib/modules/mmi_annotate.ko /lib/modules/mmi_discrete_charger_class.ko /lib/modules/adapter_class.ko
+/lib/modules/tcpc_sgm7220.ko: /lib/modules/tcpc_class.ko /lib/modules/adapter_class.ko
+/lib/modules/adapter_class.ko:
+/lib/modules/mmi_annotate.ko:
+/lib/modules/bq2589x_charger.ko: /lib/modules/mmi_discrete_charger_class.ko
+/lib/modules/tcpc_class.ko: /lib/modules/adapter_class.ko
+/lib/modules/qpnp_adaptive_charge.ko: /lib/modules/mmi_charger.ko /lib/modules/mmi_info.ko /lib/modules/mmi_annotate.ko
+/lib/modules/sgm4154x_charger.ko: /lib/modules/mmi_discrete_charger_class.ko
+/lib/modules/rt_pd_manager.ko: /lib/modules/mmi_discrete_charger_class.ko /lib/modules/tcpc_class.ko /lib/modules/adapter_class.ko
+/lib/modules/mmi_discrete_charger_class.ko:
+/lib/modules/mmi_charger.ko: /lib/modules/mmi_info.ko /lib/modules/mmi_annotate.ko

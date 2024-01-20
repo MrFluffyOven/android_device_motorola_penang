@@ -1,0 +1,26 @@
+# Aliases extracted from modules themselves.
+alias i2c:rt1711h tcpc_rt1711h
+alias i2c:rt1715 tcpc_rt1711h
+alias i2c:rt1716 tcpc_rt1711h
+alias i2c:sgm7220 tcpc_sgm7220
+alias i2c:bq2589x-1 bq2589x_charger
+alias i2c:sgm41541 sgm4154x_charger
+alias i2c:sgm41542 sgm4154x_charger
+alias i2c:sgm41516 sgm4154x_charger
+alias i2c:sgm41516D sgm4154x_charger
+alias i2c:sgm41513 sgm4154x_charger
+alias i2c:sgm41543D sgm4154x_charger
+alias of:N*T*Csgm,sgm41541 sgm4154x_charger
+alias of:N*T*Csgm,sgm41541C* sgm4154x_charger
+alias of:N*T*Csgm,sgm41542 sgm4154x_charger
+alias of:N*T*Csgm,sgm41542C* sgm4154x_charger
+alias of:N*T*Csgm,sgm41516 sgm4154x_charger
+alias of:N*T*Csgm,sgm41516C* sgm4154x_charger
+alias of:N*T*Csgm,sgm41516D sgm4154x_charger
+alias of:N*T*Csgm,sgm41516DC* sgm4154x_charger
+alias of:N*T*Csgm,sgm41513 sgm4154x_charger
+alias of:N*T*Csgm,sgm41513C* sgm4154x_charger
+alias of:N*T*Csgm,sgm41543D sgm4154x_charger
+alias of:N*T*Csgm,sgm41543DC* sgm4154x_charger
+alias of:N*T*Crichtek,rt-pd-manager rt_pd_manager
+alias of:N*T*Crichtek,rt-pd-managerC* rt_pd_manager
