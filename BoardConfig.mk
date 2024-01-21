@@ -130,6 +130,10 @@ BOARD_HAS_NO_SELECT_BUTTON := true
 TARGET_RECOVERY_PIXEL_FORMAT := RGBX_8888
 TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
+BOARD_SUPPRESS_SECURE_ERASE := true
+BOARD_USES_RECOVERY_AS_BOOT := true
+TARGET_NO_RECOVERY := true
+TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/recovery.fstab
 
 # Use mke2fs to create ext4 images
 TARGET_USES_MKE2FS := true
@@ -147,6 +151,9 @@ RECOVERY_LIBRARY_SOURCE_FILES += \
     $(TARGET_OUT_SYSTEM_EXT_SHARED_LIBRARIES)/libdisplayconfig.qti.so \
     $(TARGET_OUT_SYSTEM_EXT_SHARED_LIBRARIES)/vendor.display.config@1.0.so \
     $(TARGET_OUT_SYSTEM_EXT_SHARED_LIBRARIES)/vendor.display.config@2.0.so
+
+# Vendor Modules
+TW_LOAD_VENDOR_MODULES := "mmi_annotate.ko mmi_info.ko cw2217b_fg_mmi.ko adapter_class.ko mmi_charger.ko mmi_discrete_charger_class.ko sgm4154x_charger.ko bq2589x_charger.ko mmi_discrete_charger.ko qpnp_adaptive_charge.ko tcpc_class.ko tcpc_sgm7220.ko tcpc_rt1711h.ko rt_pd_manager.ko"
 
 # Verified Boot
 BOARD_AVB_ENABLE := true
