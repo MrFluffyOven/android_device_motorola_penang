@@ -87,25 +87,25 @@ PRODUCT_SYSTEM_PROPERTY_BLACKLIST += \
 
     # Copy modules for depmod
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/recovery/root/vendor/lib/modules/1.1/adapter_class.ko:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/lib/modules/1.1/adapter_class.ko \
-    $(LOCAL_PATH)/recovery/root/vendor/lib/modules/1.1/cw2217b_fg_mmi.ko:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/lib/modules/1.1/cw2217b_fg_mmi.ko \
-    $(LOCAL_PATH)/recovery/root/vendor/lib/modules/1.1/mmi_annotate.ko:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/lib/modules/1.1/mmi_annotate.ko \
-    $(LOCAL_PATH)/recovery/root/vendor/lib/modules/1.1/mmi_info.ko:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/lib/modules/1.1/mmi_info.ko \
-    $(LOCAL_PATH)/recovery/root/vendor/lib/modules/1.1/mmi_charger.ko:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/lib/modules/1.1/mmi_charger.ko \
-    $(LOCAL_PATH)/recovery/root/vendor/lib/modules/1.1/mmi_discrete_charger.ko:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/lib/modules/1.1/mmi_discrete_charger.ko \
-    $(LOCAL_PATH)/recovery/root/vendor/lib/modules/1.1/mmi_discrete_charger_class.ko:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/lib/modules/1.1/mmi_discrete_charger_class.ko \
-    $(LOCAL_PATH)/recovery/root/vendor/lib/modules/1.1/qpnp_adaptive_charge.ko:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/lib/modules/1.1/qpnp_adaptive_charge.ko \
-    $(LOCAL_PATH)/recovery/root/vendor/lib/modules/1.1/qpnp-power-on-mmi.ko:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/lib/modules/1.1/qpnp-power-on-mmi.ko \
-    $(LOCAL_PATH)/recovery/root/vendor/lib/modules/1.1/phy-qcom-ufs.ko:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/lib/modules/1.1/phy-qcom-ufs.ko \
-    $(LOCAL_PATH)/recovery/root/vendor/lib/modules/1.1/phy-qcom-ufs-qmp-v3.ko:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/lib/modules/1.1/phy-qcom-ufs-qmp-v3.ko
-    $(LOCAL_PATH)/recovery/root/vendor/lib/modules/1.1/phy-qcom-ufs-qmp-v4-yupik.ko:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/lib/modules/1.1/phy-qcom-ufs-qmp-v4-yupik.ko \
-    $(LOCAL_PATH)/recovery/root/vendor/lib/modules/1.1/phy-qcom-ufs-qrbtc-sdm845.ko:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/lib/modules/1.1/phy-qcom-ufs-qrbtc-sdm845.ko \
-    $(LOCAL_PATH)/recovery/root/vendor/lib/modules/1.1/rt_pd_manager.ko:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/lib/modules/1.1/rt_pd_manager.ko \
-    $(LOCAL_PATH)/recovery/root/vendor/lib/modules/1.1/sdhci-msm.ko:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/lib/modules/1.1/sdhci-msm.ko \
-    $(LOCAL_PATH)/recovery/root/vendor/lib/modules/1.1/sgm4154x_charger.ko:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/lib/modules/1.1/sgm4154x_charger.ko \
-    $(LOCAL_PATH)/recovery/root/vendor/lib/modules/1.1/tcpc_class.ko:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/lib/modules/1.1/tcpc_class.ko \
-    $(LOCAL_PATH)/recovery/root/vendor/lib/modules/1.1/tcpc_rt1711h.ko:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/lib/modules/1.1/tcpc_rt1711h.ko \
-    $(LOCAL_PATH)/recovery/root/vendor/lib/modules/1.1/tcpc_sgm7220.ko:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/lib/modules/1.1/tcpc_sgm7220.ko \
-    $(LOCAL_PATH)/recovery/root/vendor/lib/modules/1.1/ufshcd-crypto-qti.ko:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/lib/modules/1.1/ufshcd-crypto-qti.ko \
-    $(LOCAL_PATH)/recovery/root/vendor/lib/modules/1.1/ufs-qcom.ko:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/lib/modules/1.1/ufs-qcom.ko \
+    $(LOCAL_PATH)/prebuilt/adapter_class.ko:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/lib/modules/1.1/adapter_class.ko \
+    $(LOCAL_PATH)/prebuilt/cw2217b_fg_mmi.ko:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/lib/modules/1.1/cw2217b_fg_mmi.ko \
+    $(LOCAL_PATH)/prebuilt/mmi_annotate.ko:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/lib/modules/1.1/mmi_annotate.ko \
+    $(LOCAL_PATH)/prebuilt/mmi_info.ko:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/lib/modules/1.1/mmi_info.ko \
+    $(LOCAL_PATH)/prebuilt/mmi_charger.ko:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/lib/modules/1.1/mmi_charger.ko \
+    $(LOCAL_PATH)/prebuilt/mmi_discrete_charger.ko:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/lib/modules/1.1/mmi_discrete_charger.ko \
+    $(LOCAL_PATH)/prebuilt/mmi_discrete_charger_class.ko:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/lib/modules/1.1/mmi_discrete_charger_class.ko \
+    $(LOCAL_PATH)/prebuilt/qpnp_adaptive_charge.ko:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/lib/modules/1.1/qpnp_adaptive_charge.ko \
+    $(LOCAL_PATH)/prebuilt/qpnp-power-on-mmi.ko:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/lib/modules/1.1/qpnp-power-on-mmi.ko \
+    $(LOCAL_PATH)/prebuilt/phy-qcom-ufs.ko:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/lib/modules/1.1/phy-qcom-ufs.ko \
+    $(LOCAL_PATH)/prebuilt/phy-qcom-ufs-qmp-v3.ko:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/lib/modules/1.1/phy-qcom-ufs-qmp-v3.ko
+    $(LOCAL_PATH)/prebuilt/phy-qcom-ufs-qmp-v4-yupik.ko:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/lib/modules/1.1/phy-qcom-ufs-qmp-v4-yupik.ko \
+    $(LOCAL_PATH)/prebuilt/phy-qcom-ufs-qrbtc-sdm845.ko:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/lib/modules/1.1/phy-qcom-ufs-qrbtc-sdm845.ko \
+    $(LOCAL_PATH)/prebuilt/rt_pd_manager.ko:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/lib/modules/1.1/rt_pd_manager.ko \
+    $(LOCAL_PATH)/prebuilt/sdhci-msm.ko:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/lib/modules/1.1/sdhci-msm.ko \
+    $(LOCAL_PATH)/prebuilt/sgm4154x_charger.ko:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/lib/modules/1.1/sgm4154x_charger.ko \
+    $(LOCAL_PATH)/prebuilt/tcpc_class.ko:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/lib/modules/1.1/tcpc_class.ko \
+    $(LOCAL_PATH)/prebuilt/tcpc_rt1711h.ko:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/lib/modules/1.1/tcpc_rt1711h.ko \
+    $(LOCAL_PATH)/prebuilt/tcpc_sgm7220.ko:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/lib/modules/1.1/tcpc_sgm7220.ko \
+    $(LOCAL_PATH)/prebuilt/ufshcd-crypto-qti.ko:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/lib/modules/1.1/ufshcd-crypto-qti.ko \
+    $(LOCAL_PATH)/prebuilt/ufs-qcom.ko:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/lib/modules/1.1/ufs-qcom.ko \
 
