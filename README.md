@@ -12,4 +12,4 @@
 ## Clone Kernel
     git clone https://github.com/MrFluffyOven/android_kernel_motorola_penang.git -b twrp-11.0 kernel/motorola/penang
 ## Build
-    $ . build/envsetup.sh; export ALLOW_MISSING_DEPENDENCIES=true; lunch twrp_penang-eng; mka -j6 recoveryimage
+    $ . build/envsetup.sh; export ALLOW_MISSING_DEPENDENCIES=true; lunch twrp_penang-eng; mka -j6 bootimage
